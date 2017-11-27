@@ -32,7 +32,7 @@ public class ReservationHandler {
 	 * Simulate restaurant figuring out if they have a table left.
 	 */
 	private static Duration randomThinkTime() {
-		return Duration.ofSeconds(2 + random.nextInt(8));
+		return Duration.ofMillis(1000 + random.nextInt(7000));
 	}
 
 	private static Mono<Boolean> randomAvailability() {
